@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 40px;
+            background-color: #f4f4f4;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 50%;
+            margin: auto;
+            box-shadow: 0px 0px 10px gray;
+        }
+        input, select {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+    <form action="FormServlet" method="post">
+        <input type="text" name="name" placeholder="Enter Name" required><br>
+        <input type="email" name="email" placeholder="Enter Email" required><br>
+        <input type="text" name="phone" placeholder="Enter Phone" required><br>
+        <select name="course">
+            <option value="Computer Science">Computer Science</option>
+            <option value="Mechanical Engineering">Mechanical Engineering</option>
+            <option value="Electrical Engineering">Electrical Engineering</option>
+            <option value="Civil Engineering">Civil Engineering</option>
+        </select><br>
+        <input type="submit" value="Register">
+    </form>
+
+</body>
+</html>
